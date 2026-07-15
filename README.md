@@ -1,1 +1,0 @@
-# tamago-hash.github.io

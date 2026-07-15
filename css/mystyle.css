@@ -1,0 +1,224 @@
+@charset "utf-8";
+ 
+ h1{
+     color: rgb(64, 154, 70);
+    font-size:150%;
+    text-align: left;
+ }
+
+.sub-h2{
+	font-size:120%;
+	border-bottom: 1px dashed #0d4a1c;
+	border-left: 10px solid #0d4a1c;
+	padding-left: 7px;
+}
+
+h2{
+    font-size:150%;
+    border-bottom: 1px dashed #ff9900;
+	border-left: 10px solid #ff9900;
+	padding-left: 7px;
+}
+
+.dummy{
+	margin: 0;
+}
+
+article{
+	position: relative;
+	clear: both;
+	width: 960px;
+    margin-left: auto;
+	margin-right: auto;
+}
+
+.catch{
+	position: absolute;
+	top: 20px;
+	left: 30px;
+	color: #ffffff;
+    text-shadow: 0px 5px 10px #6e4d1b;
+	background-color: rgba(187, 208, 182, 0.2);
+}
+
+header{
+	background-color: #d6efda;
+	color: #0d4a1c;
+}
+
+.header-in{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header img{
+	height: 80px;
+	width:auto
+}
+
+ul{
+	list-style-type: none;
+	padding-left: 0;
+	font-size: 90%;
+	line-height: 1.8;
+}
+
+ul time{
+	background-color: #ec8e22;
+	color: #ffffff;
+	border-radius: 9px;
+	font-size: 90%;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-right: 5px;
+}
+
+
+nav ul{
+     font-weight: bold;
+	 text-align: right;
+	 padding-top: 26px;
+	 padding-bottom: 5px;
+	 margin: 0;
+}
+
+nav li{
+    display: inline;
+	padding-left: 10px;
+	padding-right: 12px;
+	border-right: solid #125c24;
+}
+
+header img{
+	float: left;
+}
+
+.header-in{
+     width: 960px;
+	 margin-left: auto;
+	 margin-right: auto;
+}
+
+.sub-h1{
+	background: linear-gradient(to left,#ffffff,#dcdcdc);
+	padding-top:  5px;
+	padding-left: 10px;
+	border-left: 15px solid#0d4a1c;
+}
+
+.point-list{
+	list-style-image: url(../img/list.gif);
+	font-weight: bold;
+	margin-left: 30px;
+}
+
+.point-img{
+	box-shadow: 0px 0px 10px 3px #aaaaaa;
+	border-radius: 10px;
+	float: right;
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+
+/*プリント出力*/
+@media print{
+	.catch{
+		color:#000000;
+		text-shadow: none;
+	}
+	footer{
+		color: #000000;
+	}
+}
+
+.sentou{
+	clear: both;
+	text-align: right;
+}
+
+ol li{
+	display: inline ;
+	margin-right: 5px;
+	font-size: 80%;
+}
+
+ol {
+	padding-left: 0;
+}
+
+
+.page {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+nav ul a{
+	text-decoration: none;
+	color: #0d4a1c;
+}
+
+nav ul a:hover{
+	color: #ffcc00;
+}
+
+nav ul a:active{
+	color: #f57c2b;
+}
+
+/* 959px以下の場合 */
+@media(max-width:959px){
+	header img{
+		float: none;
+	}
+	
+    nav ul{
+	text-align: left;
+	padding: 0;
+	margin-left: 10px;
+    }
+    article{
+	width: auto;
+    }
+
+    article img{
+	max-width: 100%;
+	height: auto;
+    }
+
+    .header-in {
+	width: auto;
+    }  
+}
+
+
+/*600px以下の場合*/
+@media(max-width:600px){
+	nav li{
+		font-size: 75%;
+		padding-left: 2px;
+		padding-right: 2px;
+	}
+
+	footer{
+		font-size: 75%;
+	}
+
+	.catch{
+		top: 5px;
+		left: 10px;
+	}
+	.point-img {
+		float: none;
+	}
+}
+
+.training-info{
+	margin: 15px 0;
+	padding-left:  20px;
+}
+
+.training-info li{
+	margin-bottom:  8px;
+	line-height: 1.8;
+}
